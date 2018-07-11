@@ -1,0 +1,16 @@
+##numero:user:serveur ou IP:commentaire
+#numero de connexion:user:serveur ou IP:commentaire
+#===================:====:===========:===========
+#Ajout CLE SSH:::
+000:n importe:celuiquetuveux:fait un ssh copy id
+#BitBucket:::
+001:BitBucket_user:BBQserveur:Serveur BitBucket DEV
+#jenkins:::
+#Sonar:::
+#Nexus:::
+#Artifactory:::
+#Jira:::
+#Palamida:::
+#Test:::
+#EXIT:::
+999:EXIT:=============:===========
