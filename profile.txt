@@ -1,0 +1,15 @@
+
+<source lang="shell" >
+HISTFILE=/home/dorier/.sh_history_`date "+%Y%m%d"`
+
+find /home/dorier -maxdepth 1 -type f -name ".sh_history_????????" -mtime +7 -exec mv {} /home/dorier/.history/ \;
+find /home/dorier/.history -type f -name ".sh_history_????????" -mtime +7 -exec compress {} \;
+
+# find /home/dorier -type f -name ".sh_history_*.Z" -mtime +30 -exec ls -l {} \;
+</source>
+
+=Prompt=
+
+<source lang="shell" >
+PS1=$(tput smul;tput bold;tput setaf 2)${LOGNAME}@$(uname -n)$(tput sgr0;tput setaf 3):\$PWD$(tput sgr0)\ $PS2\
+</source>
