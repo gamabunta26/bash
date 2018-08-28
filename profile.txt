@@ -11,5 +11,5 @@ find /home/dorier/.history -type f -name ".sh_history_????????" -mtime +7 -exec 
 =Prompt=
 
 <source lang="shell" >
-PS1=$(tput smul;tput bold;tput setaf 2)${LOGNAME}@$(uname -n)$(tput sgr0;tput setaf 3):\$PWD$(tput sgr0)\ $PS2\
+PS1=$(tput smul;tput bold;tput setaf 2)${LOGNAME}@$(uname -n)$(tput sgr0;tput setaf 3):\$PWD$(tput sgr0)\ $PS1\
 </source>
